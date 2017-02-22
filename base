@@ -1,0 +1,186 @@
+var playerPosX = 180; var playerPosY = 180;
+var char = getImage("cute/CharacterBoy");
+imageMode(CENTER);
+background(247, 237, 237);
+
+
+var i = 0; var j = 0; var tile = 40; var tileCenter = tile*1.5;
+stroke(0, 0, 0); strokeWeight(1);
+
+var draw = function() {
+
+for (var i = tile ; i < 360; i = i+tile) {
+    for (var j = tile ; j < 360; j = j+tile) {
+    rect(i, j, tile, tile);
+    }
+}
+
+image(char,playerPosX,playerPosY,20,40);
+mouseClicked = function () {
+playSound(getSound("rpg/step-heavy"));
+//First Row
+if (mouseX > tile*1 && mouseX < tile*2 && mouseY > tile*1 && mouseY < tile*2){
+    playerPosX = tileCenter+tile*0;
+    playerPosY = tileCenter+tile*0;
+    }
+    else
+    if (mouseX > tile*2 && mouseX < tile*3 && mouseY > tile*1 && mouseY < tile*2){
+    playerPosX = tileCenter+tile*1;
+    playerPosY = tileCenter+tile*0;
+    }
+    else
+    if (mouseX > tile*3 && mouseX < tile*4 && mouseY > tile*1 && mouseY < tile*2){
+    playerPosX = tileCenter+tile*2;
+    playerPosY = tileCenter+tile*0;
+    }
+    else
+    if (mouseX > tile*4 && mouseX < tile*5 && mouseY > tile*1 && mouseY < tile*2){
+    playerPosX = tileCenter+tile*3;
+    playerPosY = tileCenter+tile*0;
+    }
+    else
+    if (mouseX > tile*5 && mouseX < tile*6 && mouseY > tile*1 && mouseY < tile*2){
+    playerPosX = tileCenter+tile*4;
+    playerPosY = tileCenter+tile*0;
+    }
+    else
+    if (mouseX > tile*6 && mouseX < tile*7 && mouseY > tile*1 && mouseY < tile*2){
+    playerPosX = tileCenter+tile*5;
+    playerPosY = tileCenter+tile*0;
+    }
+    else
+    if (mouseX > tile*7 && mouseX < tile*8 && mouseY > tile*1 && mouseY < tile*2){
+    playerPosX = tileCenter+tile*6;
+    playerPosY = tileCenter+tile*0;
+    }
+    else
+    if (mouseX > tile*8 && mouseX < tile*9 && mouseY > tile*1 && mouseY < tile*2){
+    playerPosX = tileCenter+tile*7;
+    playerPosY = tileCenter+tile*0;
+    }
+//Second Row
+    else
+    if (mouseX > tile*1 && mouseX < tile*2 && mouseY > tile*2 && mouseY < tile*3){
+    playerPosX = tileCenter+tile*0;
+    playerPosY = tileCenter+tile*1;
+    }
+    else
+    if (mouseX > tile*2 && mouseX < tile*3 && mouseY > tile*2 && mouseY < tile*3){
+    playerPosX = tileCenter+tile*1;
+    playerPosY = tileCenter+tile*1;
+    }
+    else
+    if (mouseX > tile*3 && mouseX < tile*4 && mouseY > tile*2 && mouseY < tile*3){
+    playerPosX = tileCenter+tile*2;
+    playerPosY = tileCenter+tile*1;
+    }
+    else
+    if (mouseX > tile*4 && mouseX < tile*5 && mouseY > tile*2 && mouseY < tile*3){
+    playerPosX = tileCenter+tile*3;
+    playerPosY = tileCenter+tile*1;
+    }
+    else
+    if (mouseX > tile*5 && mouseX < tile*6 && mouseY > tile*2 && mouseY < tile*3){
+    playerPosX = tileCenter+tile*4;
+    playerPosY = tileCenter+tile*1;
+    }
+    else
+    if (mouseX > tile*6 && mouseX < tile*7 && mouseY > tile*2 && mouseY < tile*3){
+    playerPosX = tileCenter+tile*5;
+    playerPosY = tileCenter+tile*1;
+    }
+    else
+    if (mouseX > tile*7 && mouseX < tile*8 && mouseY > tile*2 && mouseY < tile*3){
+    playerPosX = tileCenter+tile*6;
+    playerPosY = tileCenter+tile*1;
+    }
+    else
+    if (mouseX > tile*8 && mouseX < tile*9 && mouseY > tile*2 && mouseY < tile*3){
+    playerPosX = tileCenter+tile*7;
+    playerPosY = tileCenter+tile*1;
+    }
+//Third Row
+    else
+    if (mouseX > tile*1 && mouseX < tile*2 && mouseY > tile*3 && mouseY < tile*4){
+    playerPosX = tileCenter+tile*0;
+    playerPosY = tileCenter+tile*2;
+    }
+    else
+    if (mouseX > tile*2 && mouseX < tile*3 && mouseY > tile*3 && mouseY < tile*4){
+    playerPosX = tileCenter+tile*1;
+    playerPosY = tileCenter+tile*2;
+    }
+    else
+    if (mouseX > tile*3 && mouseX < tile*4 && mouseY > tile*3 && mouseY < tile*4){
+    playerPosX = tileCenter+tile*2;
+    playerPosY = tileCenter+tile*2;
+    }
+    else
+    if (mouseX > tile*4 && mouseX < tile*5 && mouseY > tile*3 && mouseY < tile*4){
+    playerPosX = tileCenter+tile*3;
+    playerPosY = tileCenter+tile*2;
+    }
+    else
+    if (mouseX > tile*5 && mouseX < tile*6 && mouseY > tile*3 && mouseY < tile*4){
+    playerPosX = tileCenter+tile*4;
+    playerPosY = tileCenter+tile*2;
+    }
+    else
+    if (mouseX > tile*6 && mouseX < tile*7 && mouseY > tile*3 && mouseY < tile*4){
+    playerPosX = tileCenter+tile*5;
+    playerPosY = tileCenter+tile*2;
+    }
+    else
+    if (mouseX > tile*7 && mouseX < tile*8 && mouseY > tile*3 && mouseY < tile*4){
+    playerPosX = tileCenter+tile*6;
+    playerPosY = tileCenter+tile*2;
+    }
+    else
+    if (mouseX > tile*8 && mouseX < tile*9 && mouseY > tile*3 && mouseY < tile*4){
+    playerPosX = tileCenter+tile*7;
+    playerPosY = tileCenter+tile*2;
+    }
+//Fourth Row
+    else
+    if (mouseX > tile*1 && mouseX < tile*2 && mouseY > tile*4 && mouseY < tile*5){
+    playerPosX = tileCenter+tile*0;
+    playerPosY = tileCenter+tile*3;
+    }
+    else
+    if (mouseX > tile*2 && mouseX < tile*3 && mouseY > tile*4 && mouseY < tile*5){
+    playerPosX = tileCenter+tile*1;
+    playerPosY = tileCenter+tile*3;
+    }
+    else
+    if (mouseX > tile*3 && mouseX < tile*4 && mouseY > tile*4 && mouseY < tile*5){
+    playerPosX = tileCenter+tile*2;
+    playerPosY = tileCenter+tile*3;
+    }
+    else
+    if (mouseX > tile*4 && mouseX < tile*5 && mouseY > tile*4 && mouseY < tile*5){
+    playerPosX = tileCenter+tile*3;
+    playerPosY = tileCenter+tile*3;
+    }
+    else
+    if (mouseX > tile*5 && mouseX < tile*6 && mouseY > tile*4 && mouseY < tile*5){
+    playerPosX = tileCenter+tile*4;
+    playerPosY = tileCenter+tile*3;
+    }
+    else
+    if (mouseX > tile*6 && mouseX < tile*7 && mouseY > tile*4 && mouseY < tile*5){
+    playerPosX = tileCenter+tile*5;
+    playerPosY = tileCenter+tile*3;
+    }
+    else
+    if (mouseX > tile*7 && mouseX < tile*8 && mouseY > tile*4 && mouseY < tile*5){
+    playerPosX = tileCenter+tile*6;
+    playerPosY = tileCenter+tile*3;
+    }
+    else
+    if (mouseX > tile*8 && mouseX < tile*9 && mouseY > tile*4 && mouseY < tile*5){
+    playerPosX = tileCenter+tile*7;
+    playerPosY = tileCenter+tile*3;
+    }
+};
+
+};
