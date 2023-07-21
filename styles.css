@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Added to stack grid and message vertically */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.grid-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.cell img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+
+/* Highlight selected character */
+.cell.selected {
+    border: 2px solid #00FF00; /* Green */
+}
+
+/* Actions Dropdown */
+.actions {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.actions ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.actions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.actions li:hover {
+    background-color: #f0f0f0;
+}
+
+.highlighted {
+    background-color: rgba(0, 255, 0, 0.5); /* Light green for highlighted cells */
+}
+
+.movable {
+    background-color: #f3f6f9;
+}
+
